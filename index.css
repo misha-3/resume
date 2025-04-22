@@ -1,0 +1,276 @@
+/*smooth scrool*/
+
+html {
+    scroll-behavior: smooth;
+}
+ 
+/*Body*/
+body {
+    font-family: 'Lora', sans-serif;
+    background-color: #FEFAE0;
+    color: #283618;
+    padding: 60px;
+    margin: 0;
+}
+
+
+
+.scale1 {
+    transform: scale(0.8);
+}
+
+.scale2 {
+    transform: scale(0.8);
+}
+
+.scale3 {
+    transform: scale(0.8);
+}
+
+.scale4 {
+    transform: scale(0.8);
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.menu .nav-item {
+    color: #DDA15E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.5s ease;
+}
+
+.menu .nav-item:hover {
+    color:#421705;
+}
+
+.star-icon {
+    font-size: 24px;
+    color: #421705;
+}
+
+
+/*about me*/
+.content-box {
+    border: 2px solid #283618;
+    background-color: wheat;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: transform 0.5s ease;
+}
+
+.content-box:hover {
+    transform: scale(1.02);
+}
+
+/*profile pic*/
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/*text about me*/
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 9px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/*education*/
+.edu-timeline {
+    border: 2px solid #283618;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background-color: wheat;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+}
+
+.edu-timeline:hover {
+    transform: scale(1.02);
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px solid #BC6C25;
+    padding-left: 20px;
+    position: relative;
+}
+
+.edu-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #283618;
+}
+
+.edu-info p {
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+.edu-year {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #283618;
+}
+
+/*skills and experience*/
+.wrapper {
+    border: 2px solid #283618;
+    max-width: 1000px;
+    margin: auto;
+    background-color: wheat;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.wrapper:hover {
+    transform: scale(1.02);
+}
+
+.wrapper h2 {
+    font-size: 1.7rem;
+    margin-top: auto;
+    margin-bottom: 35px;
+    color: #283618;
+}
+
+.bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 20px; 
+    max-width: 4000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bub {
+    font-size: 1.3rem;
+}
+
+.past {
+    font-size: 1.3rem;
+}
+
+.bubble {
+    padding: 10px 15px;
+    background-color: beige;
+    color: #283618;
+    border-radius: 1000px;
+    font-size: 1rem;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.20);
+    cursor: default;
+    text-align: center;
+}
+
+.bubble:hover {
+    transform: scale(1.2);
+}
+
+
+.exp {
+    display: flex;
+    text-align: left;
+    max-width: 3500px;
+    margin-top: 7px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.experi {
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+.venture {
+    display: flex;
+    text-align: left;
+    max-width: 3500px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+
+/*extracurriculars*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto;   
+}
+
+.activity {
+    background-color: wheat;
+    border: 2px solid #283618;
+    border-radius: 15px;
+    padding: 40px;
+    width: 310px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 1s ease; background-color: 1s ease;
+    cursor: default;
+}
+
+.activity:hover {
+    transform: scale(1.2);
+    background-color: #283618;
+    color: beige;
+}
+
+.activity h3 {
+    font-size: 1.7em;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.activity ul {
+    font-size: 1.1rem;
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+
